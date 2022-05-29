@@ -10,7 +10,31 @@ Esta programa es un buen punto de partida si desea profundizar en la implementac
 """
 
 class Grafo:
+    """
+    Una clase que representa un Grafo
 
+    ...
+    Atributos
+    ---------------------
+    numero_de_nodos : int
+        cantidad de nodos del grafo
+    dirigido: boolean
+        especifica si es dirigido o no
+    m_nodes: int 
+        almacena la secuencia de números 
+    m_adjutando_lista: estructura de un  diccionario {}
+        implementa una lista de adyacencia
+    ---------------------
+
+    Métodos
+    -------
+    agregando_borde(self, node1, node2, peso=1):
+        Agrega un nuevo grafo
+    imprimiendo_lista_adjuntada(self):
+         Recorre el diccionario y muestra los datos tanto la llave como el valor 
+    bfs_traversal(self, nodo_inicio):
+        Imprimir recorrido BFS
+    """
     def __init__(self, numero_de_nodos, dirigido=True):#Consstructor con sus parametros
 
 
