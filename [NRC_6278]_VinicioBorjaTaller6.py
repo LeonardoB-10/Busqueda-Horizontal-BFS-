@@ -56,7 +56,25 @@ class Grafo:
 	
     # Add edge to the Grafo
     def agregando_borde(self, node1, node2, peso=1):#agregamos los parametros en la función agregando_borde
+        """Agrega un nuevo grafo
+        
+        Se pasa una llave como identificador para su posterior ingreso de valor
 
+        Parametros
+        ----------
+        node1: int
+            valor del primer nodo 
+        node2: int
+            valor del segundo nodo
+        peso: int, valor por defecto 1
+            El peso de los grafos poderados
+
+        Si dirigido es falso devolvera True para ingresar como llave el nodo2 y su valor el nodo 1
+
+        Retorna
+        -------
+        Nada
+        """
         self.m_adjutando_lista[node1].add((node2, peso))#Agregamos nodo y peso
 
         if not self.m_dirigido:
