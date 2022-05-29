@@ -95,7 +95,16 @@ class Grafo:
 
 
     def bfs_traversal(self, nodo_inicio):
+        """Imprimir recorrido BFS
 
+        Parametros
+        ---------
+        nodo_inicio: int
+
+        Retorna
+        -------
+        Nada
+        """
 
         # Conjunto de nodos visitado para no ocasionar bucles
         #Creamos un objeto set
