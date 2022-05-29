@@ -77,12 +77,19 @@ class Grafo:
         """
         self.m_adjutando_lista[node1].add((node2, peso))#Agregamos nodo y peso
 
+        """Si dirigido es falso devolvera True para ingresar como llave el nodo2 y su valor el nodo 1"""
         if not self.m_dirigido:
             self.m_adjutando_lista[node2].add((node1, peso))#Nodo y peso agregado
 
 
     def imprimiendo_lista_adjuntada(self):
+        """Imprime el diccionario
+        Recorre el diccionario y muestra los datos tanto la llave como el valor 
 
+        Retorna
+        -------
+        Nada
+        """
         for llave in self.m_adjutando_lista.keys():#Realizamos recorrido
             print("nodo", llave, ": ", self.m_adjutando_lista[llave])#Se imprmir el recorrido junto la llave y el valor
 
