@@ -37,7 +37,17 @@ class Grafo:
     """
     def __init__(self, numero_de_nodos, dirigido=True):#Consstructor con sus parametros
 
+        """
+        El constructor permite inicializar los atributos del grafo
 
+        Parámetros 
+        -----------
+            numero_de_nodos: int
+                límite de nodos a ingresar
+            dirigido: boolean
+                simetria del grafo 
+
+        """
         self.m_numero_de_nodos = numero_de_nodos#Inicializamos variable m_numero_de_nodos
         self.m_nodes = range(self.m_numero_de_nodos)#Inicializamos variable m_nodes 
         self.m_dirigido = dirigido#Inicializamos variable m_dirigido
